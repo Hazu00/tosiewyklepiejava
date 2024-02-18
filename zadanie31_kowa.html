@@ -1,0 +1,24 @@
+<html>
+<head>
+<script type="text/javascript">
+var samochod = {
+    Marka: 'Mercedes',
+    model: 'w204',
+    rocznik: '2011',
+    
+    samochod_wyswietl_kowalski: function ()
+    {
+        document.write(this.Marka + ' ' + this.model)
+    }
+}
+samochod.samochod_wyswietl_kowalski();
+samochod.kolor='czarny';
+samochod.wypisz=function() {alert('Kolor: ' + this.kolor)}
+samochod.wypisz();
+</script>
+</head>
+<body>
+<br>
+programowanie obiektowe
+</body>
+</html>

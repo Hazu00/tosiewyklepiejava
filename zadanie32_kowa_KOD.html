@@ -1,0 +1,40 @@
+<html>
+<head>
+ <script type="text/javascript">
+ function okno_zamknij_Kowalski()
+ {
+ window.close()
+ }
+21
+ </script>
+</head>
+<body>
+ <form>
+ <textarea name="Kowalski" cols="80" rows="25" disabled>
+    <html>
+ <head>
+ <script type="text/javascript">
+ function samochod(marka_k,model_k,rocznik_k)
+{
+this.marka=marka_k;
+this.model=model_k;
+this.rocznik=rocznik_k;
+}
+ samochod.prototype.wypisz_kowalski = function () 
+ {
+ alert(this.marka + ' ' + this.model+ ' ' + this.rocznik);
+ };
+var samochod1 = new klient('Mercedes', "w270", "2011"); 
+var samochod2 = new klient('Bmw', 'x4', '2014');
+samochod1.wypisz_kowalski(); 
+samochod2.wypisz_kowalski();
+ document.write("dostęp do właściwości"+"<br>");
+
+ document.write("samochód pierwszy"+" "+samochod1.marka+" "+samochod1.model+" "+samochod1.rocznik);
+ </script>
+ </head>
+<body>
+<br>
+ programowanie obiektowe
+</body>
+</html>
